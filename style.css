@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(#2b1055, #7597de);
+}
+
+.container {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 100px;
+  z-index: 10000;
+}
+.container h2 {
+  margin-left: -5%;
+  letter-spacing: 2px;
+  color: white;
+}
+.container ul {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+.container ul li {
+  list-style: none;
+}
+.container ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: white;
+}
+.container ul li a:hover {
+  background-color: white;
+  color: #160532;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  overflow: hidden;
+}
+section::before {
+  content: "";
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #1c0522, transparent);
+  z-index: 1000;
+}
+section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 1s;
+}
+section img#moon {
+  left: 10%;
+  top: 0%;
+  mix-blend-mode: screen;
+  opacity: 0.9;
+}
+section img#building {
+  mix-blend-mode: luminosity;
+  filter: contrast(20px);
+  filter: brightness(0.1);
+  z-index: 150;
+}
+section img#sky {
+  opacity: 0.7;
+}
+
+.data {
+  position: relative;
+  padding: 100px;
+  background-color: #1c0522;
+}
+.data #word {
+  font-size: 25px;
+  color: white;
+  position: absolute;
+  left: -333px;
+  top: 3%;
+  z-index: 70;
+  margin-bottom: 20px;
+  transition: 1s;
+}/*# sourceMappingURL=style.css.map */
